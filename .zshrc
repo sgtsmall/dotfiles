@@ -9,6 +9,11 @@ unset LSCOLORS
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
 
+# between quotation marks is the tool output for LS_COLORS
+export LSCOLORS="gxBxhxDxfxhxhxhxhxcxcx"
+zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
+
+
 # Don't require escaping globbing characters in zsh.
 unsetopt nomatch
 
