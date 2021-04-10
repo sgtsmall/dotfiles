@@ -18,7 +18,8 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
 unsetopt nomatch
 
 # Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}$ "
+#newline %F(colour)symbol %* 24hr %F  
+export PS1=$'\n'"%F{green} %*%f %3~ %F{white}$ "
 
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
